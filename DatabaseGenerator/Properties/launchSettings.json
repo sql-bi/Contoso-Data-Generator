@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "DatabaseGenerator": {
+      "commandName": "Project",
+      "commandLineArgs": "..\\..\\..\\..\\data_folder\\in_3  ..\\..\\..\\..\\data_folder\\out_3   ..\\..\\..\\..\\data_folder\\config_3.json   param:XOrdersCount=88767 param:XCutDateBefore=2020-06-07 param:XCutDateAfterx=2020-09-27 param:XCustomerPercentage=0.56"
+    },
+    "NewProfile2": {
+      "commandName": "Project",
+      "commandLineArgs": "aaaa"
+    }
+  }
+}

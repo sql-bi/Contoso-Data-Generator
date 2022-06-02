@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>   
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="19.0.0" />
+    <PackageReference Include="ExcelDataReader.DataSet" Version="3.6.0" />
+    <PackageReference Include="MathNet.Numerics" Version="4.15.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="config_example.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="echo Custom assembly version (start)&#xD;&#xA;for /f &quot;delims=&quot; %25%25i in ('git rev-parse HEAD ') do set ZHASH=%25%25i&#xD;&#xA;echo Current hash: %25ZHASH%25&#xD;&#xA;echo [assembly: System.Reflection.AssemblyProduct(&quot;DatabaseGenerator - %25ZHASH%25&quot;)] &gt;$(ProjectDir)assemblygithash.cs&#xD;&#xA;echo Custom assembly version (end)" />
+  </Target>
+ 
+</Project>

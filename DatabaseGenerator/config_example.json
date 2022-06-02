@@ -1,0 +1,44 @@
+{
+  "OLD": "******************************************* TO BE UPDATED ******************************************",
+  "OrdersCount": 100000,
+  "StartDT": "2000-01-01T00:00:00Z",
+  "YearsCount": 2,
+  "CustomerFakeGenerator": 10000,
+  "DaysWeightConstant": false,
+  "DaysWeightPoints": [ 0, 10, 30, 40, 70, 75, 80, 100 ],
+  "DaysWeightValues": [ 2, 3, 6, 9, 11, 10, 11, 16 ],
+  "DaysWeightAddSpikes": true,
+  "DaysWeightWeekEndsDropPerCent": 0.2,
+  "DayRandomness": 0.08,
+  "OrderRowsWeights": [ 10, 8, 2, 1, 0.1 ],
+  "OrderQuantityWeights": [ 10, 2, 1, 1, 0.2 ],
+  "DiscountWeights": [ 20, 5, 0, 0, 2, 2, 0, 0, 0, 0, 5, 0, 0, 1 ],
+  "AnnualSpikes": [
+    {
+      "StartDay": 40,
+      "EndDay": 60,
+      "Factor": 1
+    },
+    {
+      "StartDay": 70,
+      "EndDay": 120,
+      "Factor": -2
+    },
+    {
+      "StartDay": 200,
+      "EndDay": 220,
+      "Factor": -0.5
+    },
+    {
+      "StartDay": 345,
+      "EndDay": 375,
+      "Factor": 1.3
+    }
+  ],
+  "CustomerActivity": {
+    "StartDateWeightPoints": [ 1980, 1990, 2000, 2010 ],
+    "StartDateWeightValues": [ 10, 10, 5, 5 ],
+    "EndDateWeightPoints": [ 2000, 2010, 2020, 2030, 2040 ],
+    "EndDateWeightValues": [ 5, 5, 10, 15, 25 ]
+  }
+}
