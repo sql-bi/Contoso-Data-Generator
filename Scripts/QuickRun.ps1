@@ -14,9 +14,9 @@ if (! $SqlDataFilesFolder)
     Exit 1
 }
 
-[string]$ContosoDatamartFolder="$($SqlDataFilesFolder)\ContosoDatamart"
-[string]$DatasetOutputFolder="$($ContosoDatamartFolder)\DatasetSqlbi"
-[string]$SqlBackupFolder="$($ContosoDatamartFolder)\SqlBackup"
+[string]$ContosoDatasetFolder="$($SqlDataFilesFolder)\ContosoDataset"
+[string]$DatasetOutputFolder="$($ContosoDatasettFolder)\DatasetSqlbi"
+[string]$SqlBackupFolder="$($ContosoDatasettFolder)\SqlBackup"
 
 
 function CreateFolderIfNotExists ([string]$folder)
@@ -28,7 +28,7 @@ function CreateFolderIfNotExists ([string]$folder)
     }
 }
 
-CreateFolderIfNotExists $ContosoDatamartFolder
+CreateFolderIfNotExists $ContosoDatasetFolder
 CreateFolderIfNotExists $DatasetOutputFolder
 CreateFolderIfNotExists $SqlBackupFolder
 

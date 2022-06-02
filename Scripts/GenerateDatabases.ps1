@@ -26,13 +26,13 @@ param(
     [String]$DatasetInputFolder="$($PSScriptRoot)\..\DatasetSqlbi", 
 
     # Absolute Folder for Dataset - write CSV file written by DatabaseGenerator.exe
-    [String]$DatasetOutputFolder='C:\Temp\ContosoDatamart\DatasetSqlbi', 
+    [String]$DatasetOutputFolder='C:\Temp\ContosoDataset\DatasetSqlbi', 
 
     # Absolute Path for config file (JSON)
     [String]$ConfigFile="$($PSScriptRoot)\..\DatasetSqlbi\config.json", 
 
     # Destination Folder for SQL Server backup and ZIP files (ABSOLUTE path)
-    [String]$SqlBackupFolder='C:\Temp\ContosoDatamart\SqlBackup',
+    [String]$SqlBackupFolder='C:\Temp\ContosoDataset\SqlBackup',
 
     # Temporary folder to store MDF/LDF/BAK/ZIP files during processing
     # MUST BE a physical folder accessible by SQL Server, don't use user folders!
