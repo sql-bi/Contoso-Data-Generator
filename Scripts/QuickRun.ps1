@@ -15,8 +15,8 @@ if (! $SqlDataFilesFolder)
 }
 
 [string]$ContosoDatasetFolder="$($SqlDataFilesFolder)\ContosoDataset"
-[string]$DatasetOutputFolder="$($ContosoDatasettFolder)\DatasetSqlbi"
-[string]$SqlBackupFolder="$($ContosoDatasettFolder)\SqlBackup"
+[string]$DatasetOutputFolder="$($ContosoDatasetFolder)\DatasetSqlbi"
+[string]$SqlBackupFolder="$($ContosoDatasetFolder)\SqlBackup"
 
 
 function CreateFolderIfNotExists ([string]$folder)
