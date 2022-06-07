@@ -5,6 +5,8 @@
 -- Create database before running the script
 USE [#DATABASE_NAME#]
 GO
+SET LANGUAGE US_ENGLISH
+GO
 
 -- 
 --  PARAMETERS
