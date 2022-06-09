@@ -24,7 +24,7 @@ It's a C# project for .NET Core 3.1, included into the DatabaseGenerator.sln Vis
 Powershell scripts that  
 
 - runs the DatabaseGenerator
-- creates the new custom contoso databse
+- creates the new custom contoso database
 - import the constant and generated data into the new databae
 - exports the generated database to a compressed file
 
