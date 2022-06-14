@@ -32,7 +32,7 @@ Powershell scripts that
 
 - **Scripts** and subfolders: the PowerShell scripts and SQL scripts run by it
 - **Contoso Main** and subfolders: the CSV containing the constant data as csv files 
-- **DataseteSqlbi**: configuration files used to run DatabaseGenerator
+- **DatasetSqlbi**: configuration files used to run DatabaseGenerator
 
 ## Quick Run
 
