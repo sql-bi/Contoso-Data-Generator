@@ -2,7 +2,9 @@
 
 A custom Contoso sample database generator.
 
-**IMPORTANT**: Clone the repository only if you want to compile the project with Visual Studio. If you want to use the ready-to-use script to generate a new database with the precompiled tool, you must download the zip file with *Contoso-Data-Generator source code and executables* from the release folder.
+**IMPORTANT**: There are 2 ways to run this custom Contonso sample database generator: 
+1. If you clone the repository, you must compile the project with Visual Studio. 
+2. If you want to use the ready-to-use script to generate a new database with the precompiled tool, you can download the zip file with *Contoso-Data-Generator source code and executables* from the release folder.
 
 ## Content
 
@@ -36,7 +38,7 @@ Powershell scripts that
 - **Contoso Main** and subfolders: the CSV containing the constant data as csv files 
 - **DatasetSqlbi**: configuration files used to run DatabaseGenerator
 
-## Quick Run
+## Instructions
 
 To quickly test the tool, verify the pre-requisites and run the QuickRun.ps1 script in the script folder.
 
@@ -55,4 +57,4 @@ QuickRun.ps1 takes one optional parameter
 
  - **SqlDataFilesFolder** (default C:\TEMP): the folder to contain the generated files. The user of the SQL Server service must have access to this folder with the rights to read, write and create files.
 
-QuickRun.ps1 runs GenerateDatabases.ps1 script. For further details, please refert to the documentation into the Scripts folder
+QuickRun.ps1 runs GenerateDatabases.ps1 script. For further details, please refer to the documentation into the Scripts folder.
