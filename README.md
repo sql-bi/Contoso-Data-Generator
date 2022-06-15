@@ -2,7 +2,7 @@
 
 A custom Contoso sample database generator.
 
-**IMPORTANT**: Clone the repository only if you want to compile the project with Visual Studio. If you want to use the ready-to-use script to generate new database with precompiled tool, you must download the zip file with *Contoso-Data-Generator source code and executables* from the release folder.
+**IMPORTANT**: Clone the repository only if you want to compile the project with Visual Studio. If you want to use the ready-to-use script to generate a new database with the precompiled tool, you must download the zip file with *Contoso-Data-Generator source code and executables* from the release folder.
 
 ## Content
 
