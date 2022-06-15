@@ -1,6 +1,8 @@
 # Contoso Data Generator
 
-A custom Contoso sample database generator
+A custom Contoso sample database generator.
+
+**IMPORTANT**: Clone the repository only if you want to compile the project with Visual Studio. If you want to use the ready-to-use script to generate new database with precompiled tool, you must download the zip file with *Contoso-Data-Generator source code and executables* from the release folder.
 
 ## Content
 
@@ -36,7 +38,9 @@ Powershell scripts that
 
 ## Quick Run
 
-To quickly test the tool, verify the pre-requisites and run the QuickRun.ps1 script in the script folder
+To quickly test the tool, verify the pre-requisites and run the QuickRun.ps1 script in the script folder.
+
+**IMPORTANT**: The executable is available in the ZIP included in the release folder. If you clone the repository, you must compile the executable with Visual Studio.
 
 ### Pre-requisite to run the tool
 
