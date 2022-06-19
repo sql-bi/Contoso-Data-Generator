@@ -18,7 +18,7 @@ Output files:
 
 ## Model
 
-<img src="images/contoso-datamart-model.png" with=280></img>
+<img src="images/contoso-dataset-model.png" with=280></img>
 
 ## Json Configuration file (config.json)
 
