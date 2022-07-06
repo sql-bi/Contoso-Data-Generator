@@ -47,14 +47,15 @@ To quickly test the tool, verify the pre-requisites and run the QuickRun.ps1 scr
 ### Pre-requisite to run the tool
 
 - 7-Zip [https://www.7-zip.org/](https://www.7-zip.org/)
-- Microsoft SQL Server must be installed on the same PC, reachable through the Alias **Demo**
+- Microsoft SQL Server must be installed on the same PC, reachable through the Alias **Demo**. You can download SQL Server Developer (free edition, licensed for use as a development and test database in a non-production environment) at [https://www.microsoft.com/en-us/sql-server/sql-server-downloads](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 - The user running Microsoft SQL Server service must have access to the **SqlDataFiles** folder (default C:\TEMP) used by the PowerShell script (see following section)
 - .Net Core 3.1 [https://dotnet.microsoft.com/en-us/download/dotnet/3.1](https://dotnet.microsoft.com/en-us/download/dotnet/3.1)
 
 ### Running QuickRun.ps1
 
-QuickRun.ps1 takes one optional parameter
+QuickRun.ps1 takes two optional parameters
 
- - **SqlDataFilesFolder** (default C:\TEMP): the folder to contain the generated files. The user of the SQL Server service must have access to this folder with the rights to read, write and create files.
+ - **SqlDataFilesFolder** (default C:\TEMP): the folder to contain the generated files. The user running Microsoft SQL Server service must have access to the SqlDataFiles folder (default C:\TEMP). For more information read [https://www.mssqltips.com/sqlservertip/6930/issues-sql-server-permissions-restore-database/](https://www.mssqltips.com/sqlservertip/6930/issues-sql-server-permissions-restore-database/)
+ - **SqlServerInstance** (Default Demo): the name of the SQL server instance. The default is the alias name Demo, that can be configured using the SQL Server Configuration Manager [https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/create-or-delete-a-server-alias-for-use-by-a-client](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/create-or-delete-a-server-alias-for-use-by-a-client)
 
 QuickRun.ps1 runs GenerateDatabases.ps1 script. For further details, please refer to the documentation into the Scripts folder.
